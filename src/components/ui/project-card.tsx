@@ -36,7 +36,7 @@ export function ProjectCard({ title, description, longDescription, tags, demoUrl
         </CardTitle>
         <CardDescription className="line-clamp-3 text-left">{description}</CardDescription>
       </CardHeader>
-      <CardContent className="flex-grow">
+      <CardContent>
         <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
             <Badge key={tag} variant="secondary">
