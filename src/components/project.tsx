@@ -16,7 +16,7 @@ export default function Project() {
             />
             <ProjectCard
               title="Rice Classification"
-              description="A machine learning app that classifies two rice types using a neural network trained on key physical grain characteristics."
+              description="A machine learning app that classifies two rice types using a neural network trained on key grain characteristics."
               longDescription="A machine learning application that distinguishes between two rice types using a neural network built in PyTorch. The model is trained on key physical grain features—such as area, perimeter, major and minor axis lengths, eccentricity, convex area, extent, and compactness—to perform binary classification. It employs multiple hidden layers with sigmoid activations and is optimized using the Adam optimizer over 1000 epochs. Additionally, hyperparameter tuning is integrated via skorch and GridSearchCV to refine the network architecture and learning rate. This setup provides a scalable, accurate framework for rice quality assessment and agricultural analysis."
               tags={["Python", "Pytorch", "Sklearn", "Streamlit"]}
               demoUrl="https://rice-classification-machinelearning.streamlit.app"
