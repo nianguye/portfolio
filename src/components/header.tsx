@@ -4,7 +4,7 @@ import { Github, Linkedin } from "lucide-react";  // example icon imports
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-10 border-b bg-background/95 backdrop-blur">
+    <header className="sticky top-0 z-10 bg-sky-100 backdrop-blur">
       <div className="container flex h-16 items-center justify-between mx-auto">
         <Link href="/" className="font-bold">
           Portfolio
