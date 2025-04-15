@@ -94,20 +94,21 @@ export function ProjectCard({ title, description, longDescription, tags, demoUrl
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button asChild className="flex-1">
+            {(demoUrl !== "" || codeUrl !== "") && <div className="grid grid-cols-2 sm:flex-row gap-4 pt-4">
+              {demoUrl !== "" && <Button asChild className="flex-1">
                 <Link href={demoUrl} target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="h-4 w-4 mr-2" />
                   View Live Demo
                 </Link>
-              </Button>
+              </Button>}
+              {codeUrl !== "" &&  
               <Button variant="outline" asChild className="flex-1">
                 <Link href={codeUrl} target="_blank" rel="noopener noreferrer">
                   <Github className="h-4 w-4 mr-2" />
                   View Source Code
                 </Link>
-              </Button>
-            </div>
+              </Button>}
+            </div>}
           </div>
         </DialogContent>
     </Dialog>
