@@ -9,7 +9,7 @@ export default function Home() {
     <section className="mx-auto py-24 md:py-32 space-y-8 ">
         <div className="flex flex-col items-center text-center space-y-4">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            Hi, I'm <span className="text-primary">Nilson</span>
+            Hi, I&apos;m <span className="text-primary">Nilson</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-[700px]">
             A Full Stack Developer passionate about building seamless digital experiences—from concept through to deployment.

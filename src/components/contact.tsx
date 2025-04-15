@@ -7,7 +7,7 @@ export default function Contact() {
           <div className="text-center space-y-8">
             <h2 className="text-3xl font-bold tracking-tight">Get In Touch</h2>
             <p className="text-muted-foreground">
-              I'm always open to new opportunities. Feel free to reach out!
+              I&apos;m always open to new opportunities. Feel free to reach out!
             </p>
 
             <div className="flex flex-col items-center justify-center p-8 border rounded-lg shadow-sm bg-white mt-8">
