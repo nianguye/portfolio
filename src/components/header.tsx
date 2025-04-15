@@ -5,7 +5,7 @@
     export default function Header() {
     return (
         <header className="sticky top-0 z-10 bg-[#90D5FF]/95 border border-transparent shadow-none ">
-        <div className="container flex h-16 items-center justify-between mx-auto">
+        <div className="relative flex h-16 items-center justify-between mx-auto px-8">
             <Link href="/" className="font-bold">
             Portfolio
             </Link>
