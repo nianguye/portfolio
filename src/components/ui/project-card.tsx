@@ -74,7 +74,7 @@ export function ProjectCard({ title, description, longDescription, tags, demoUrl
                 
               </DialogClose>
             </div>
-            <DialogDescription className="text-base">{description}</DialogDescription>
+            <DialogDescription className="text-left">{description}</DialogDescription>
           </DialogHeader>
 
           <div className="space-y-6 py-4">
