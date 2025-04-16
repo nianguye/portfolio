@@ -27,7 +27,7 @@ export function ProjectCard({ title, description, longDescription, tags, demoUrl
   const [isOpen, setIsOpen] = useState(false);
   return (
   <>
-    <Card className="flex flex-col h-full transition-all hover:shadow-md"
+    <Card className="flex flex-col h-full transition-all hover:shadow-md hover:scale-105"
     onClick={() => setIsOpen(true)}>
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
