@@ -12,7 +12,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function About() {
   return (
-    <section id="about" className="max-w-4xl mx-auto py-24 md:py-32 space-y-8">
+    <section id="about" className="max-w-4xl mx-auto py-20 md:py-32 space-y-8">
       <div className="text-center space-y-4">
         <h2 className="text-3xl font-bold tracking-tight">About</h2>
       </div>
