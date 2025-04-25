@@ -10,7 +10,7 @@ export default function Project() {
         <ProjectCard
           title="Turn Tracker"
           description="A full stack application that allows business owners to manage the workload of their employees through a round-robin system."
-          longDescription="A fill stack application developed using the MERN stack that empowers business owners to manage employee workloads efficiently across multiple businesses. The application leverages a round-robin system for task distribution and utilizes RESTful API endpoints to create worker profiles, manage services, and record daily activities. Real-time synchronization is achieved with web sockets, ensuring seamless updates across devices and improving overall workforce management."
+          longDescription="A full stack application developed using the MERN stack that allows business owners to manage employee workloads efficiently across multiple businesses. The application leverages a round-robin system for task distribution and utilizes RESTful API endpoints to create worker profiles, manage services, and record daily activities. Real-time synchronization is achieved with web sockets, ensuring seamless updates across devices and improving overall workforce management."
           tags={["React", "MongoDB", "Express.js", "Node.js"]}
           demoUrl="https://turn-tracker-vrmnk.ondigitalocean.app/"
           codeUrl="https://github.com/nianguye/turn-tracker"
