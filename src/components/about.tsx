@@ -40,14 +40,12 @@ export default function About() {
             learning new technologies and expanding my skill set.
           </p>
         </div>
-        <div className="space-y-2">
+        <div className="space-y-2 pt-2">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight">
-              Technologies I Use
+              Technologies
             </h2>
-            <p className="text-muted-foreground">
-              I am proficient in a variety of technologies, including:
-            </p>
+            
           </div>
           <div className="flex flex-row flex-wrap justify-center gap-6 pt-2">
             <Card className="flex flex-col h-32 w-32 border">
