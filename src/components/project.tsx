@@ -50,7 +50,7 @@ export default function Project() {
         <ProjectCard
           title="Pinky Nail Spa website"
           description="A simple website for a nail spa that showcases services, prices, and contact information."
-          longDescription="A simple website for a nail spa that showcases services, prices, and contact information. Built with Next.js and Tailwind CSS, it features a responsive design and smooth navigation. The site includes sections for services, pricing, and contact details, ensuring easy access to essential information. The use of Next.js allows for server-side rendering, enhancing performance and SEO. Overall, this project demonstrates the ability to create a clean and user-friendly web presence for a local business."
+          longDescription="A simple website for a nail spa that showcases services, prices, and contact information. Built with Next.js and Tailwind CSS, it features a responsive design and smooth navigation. The site includes sections for services, pricing, and contact details, ensuring easy access to essential information. Overall, this project demonstrates the ability to create a clean and user-friendly web presence for a local business."
           tags={["React", "Express.js", "Next.js", "Tailwind CSS"]}
           demoUrl=""
           codeUrl=""
