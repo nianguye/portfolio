@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import About from "@/components/about";
 import Project from "@/components/project";
 import Contact from "@/components/contact";

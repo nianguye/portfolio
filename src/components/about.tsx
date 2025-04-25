@@ -19,8 +19,8 @@ export default function About() {
       <div className="w-full mx-auto space-y-6 ">
         <div className="text-xl text-center text-muted-foreground max-w-[700px] mx-auto space-y-6">
           <p className="text-muted-foreground">
-            I’m a full stack engineer with a strong interest in back-end
-            development. Through personal projects, I’ve had the opportunity to
+            I&apos;m a full stack engineer with a strong interest in back-end
+            development. Through personal projects, I&apos;ve had the opportunity to
             collaborate with teammates, building scalable applications and
             strengthening my skills across both front-end and back-end
             technologies.
@@ -28,7 +28,7 @@ export default function About() {
           <p className="text-muted-foreground">
             My approach to web development focuses on creating responsive,
             accessible, and user-friendly interfaces that provide an exceptional
-            user experience. I’m constantly learning and exploring new
+            user experience. I&apos;m constantly learning and exploring new
             technologies to stay at the forefront of web development, always
             aiming to build reliable, efficient, and impactful systems.
           </p>
@@ -36,7 +36,7 @@ export default function About() {
           <p className="text-muted-foreground">
             In my free time, I enjoy hitting the gym for a good workout,
             embarking on spontaneous hiking trips to explore nature, and
-            collecting Pokémon cards. I'm also passionate about continuously
+            collecting Pokémon cards. Im also passionate about continuously
             learning new technologies and expanding my skill set.
           </p>
         </div>
