@@ -1,10 +1,18 @@
+"use client";
+
 import { Mail, Linkedin, Github, ExternalLink } from "lucide-react";
+import { useInView } from "react-intersection-observer";
 
 export default function Contact() {
+  const [ref, inView] = useInView({
+    threshold: 0.1,
+  });
+
   return (
     <section
       id="contact"
-      className="max-w-4xl mx-auto py-24 md:py-32  space-y-8"
+      ref={ref}
+      className={`max-w-4xl mx-auto py-24 md:py-32 space-y-8 w-full ${inView ? "fade-up" : ""}`}
     >
       <div className="container max-w-3xl mx-auto">
         <div className="text-center space-y-8">

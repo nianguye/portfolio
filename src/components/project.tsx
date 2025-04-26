@@ -1,8 +1,19 @@
+"use client";
+
+import { useInView } from "react-intersection-observer";
 import { ProjectCard } from "./ui/project-card";
 
 export default function Project() {
+  const [ref, inView] = useInView({
+    threshold: 0.1,
+  });
+
   return (
-    <section id="projects" className="py-24 md:py-32 space-y-6  w-full">
+    <section
+      id="projects"
+      ref={ref}
+      className={`py-24 md:py-32 space-y-6 w-full ${inView ? "fade-up" : ""}`}
+    >
       <div className="text-center space-y-4">
         <h2 className="text-3xl font-bold tracking-tight">My Projects</h2>
       </div>
@@ -46,7 +57,6 @@ export default function Project() {
           demoUrl=""
           codeUrl=""
         />
-
         <ProjectCard
           title="Pinky Nail Spa website"
           description="A simple website for a nail spa that showcases services, prices, and contact information."

@@ -1,3 +1,5 @@
+"use client"
+
 import { FaReact } from "react-icons/fa";
 import { RiSvelteFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
@@ -7,12 +9,22 @@ import { SiPostgresql } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { SiExpress } from "react-icons/si";
 import { FaPython } from "react-icons/fa6";
+import { useInView } from "react-intersection-observer";
 
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function About() {
+  const [ref, inView] = useInView({
+    threshold: 0.1,
+  });
   return (
-    <section id="about" className="max-w-4xl mx-auto py-20 md:py-32 space-y-8">
+    <section
+      id="about"
+      className={`max-w-4xl mx-auto py-20 md:py-32 space-y-8 ${
+        inView ? "fade-up" : ""
+      }`}
+      ref={ref}
+    >
       <div className="text-center space-y-4">
         <h2 className="text-3xl font-bold tracking-tight">About</h2>
       </div>
