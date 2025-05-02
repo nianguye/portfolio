@@ -42,46 +42,38 @@ export function ProjectCard({
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <Card
-        className="flex flex-col h-full transition-all hover:shadow-md hover:scale-105"
-        onClick={() => setIsOpen(true)}
-      >
-        <CardHeader>
-          <CardTitle className="flex items-center justify-between">
-            {title}
-          </CardTitle>
-          <CardDescription className="line-clamp-3 text-left">
-            {description}
-          </CardDescription>
-        </CardHeader>
-        <CardContent className=" flex flex-grow items-center  justify-between">
-          <div className="flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <Badge key={tag} variant="secondary">
-                {tag}
-              </Badge>
-            ))}
-          </div>
-        </CardContent>
-        <CardFooter className="grid grid-cols-2 gap-2">
-          {demoUrl !== "" && (
-            <Button variant="outline" size="sm" className="flex-1" asChild>
-              <Link href={demoUrl} target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="h-4 w-4 mr-2" />
-                Demo
-              </Link>
-            </Button>
-          )}
-          {codeUrl !== "" && (
-            <Button variant="outline" size="sm" className="flex-1" asChild>
-              <Link href={codeUrl} target="_blank" rel="noopener noreferrer">
-                <Github className="h-4 w-4 mr-2" />
-                Code
-              </Link>
-            </Button>
-          )}
-        </CardFooter>
-      </Card>
+    <Card className="flex flex-col h-full transition-all hover:shadow-md">
+      <CardHeader>
+        <CardTitle className="flex items-center justify-between">
+          {title}
+          
+        </CardTitle>
+        <CardDescription className="line-clamp-3">{description}</CardDescription>
+      </CardHeader>
+      <CardContent className="flex-grow">
+        <div className="flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <Badge key={tag} variant="secondary">
+              {tag}
+            </Badge>
+          ))}
+        </div>
+      </CardContent>
+      <CardFooter className="flex gap-2">
+        <Button variant="outline" size="sm" className="flex-1" asChild>
+          <Link href={demoUrl} target="_blank" rel="noopener noreferrer">
+            <ExternalLink className="h-4 w-4 mr-2" />
+            Demo
+          </Link>
+        </Button>
+        <Button variant="outline" size="sm" className="flex-1" asChild>
+          <Link href={codeUrl} target="_blank" rel="noopener noreferrer">
+            <Github className="h-4 w-4 mr-2" />
+            Code
+          </Link>
+        </Button>
+      </CardFooter>
+    </Card>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className="max-w-3xl w-[95vw] max-h-[90vh] overflow-y-auto">

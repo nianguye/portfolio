@@ -27,21 +27,14 @@ export default function Project() {
           codeUrl="https://github.com/nianguye/turn-tracker"
         />
         <ProjectCard
-          title="Rice Classification"
-          description="A machine learning app that classifies two rice types using a neural network trained on key grain characteristics."
-          longDescription="A machine learning application that distinguishes between two rice types using a neural network built in PyTorch. The model is trained on key physical grain features—such as area, perimeter, major and minor axis lengths, eccentricity, convex area, extent, and compactness—to perform binary classification. It employs multiple hidden layers with sigmoid activations and is optimized using the Adam optimizer over 1000 epochs. Additionally, hyperparameter tuning is integrated via skorch and GridSearchCV to refine the network architecture and learning rate. This setup provides a scalable, accurate framework for rice quality assessment and agricultural analysis."
-          tags={["Python", "Pytorch", "Sklearn", "Streamlit"]}
-          demoUrl="https://rice-classification-machinelearning.streamlit.app"
-          codeUrl="https://github.com/nianguye/Rice-Classification"
+          title="Pinky Nail Spa website"
+          description="A comprehensive website for a nail spa, designed to showcase its range of services, pricing details, and contact information. The website offers a user-friendly experience for visitors, with an intuitive layout and quick navigation. Whether it's browsing available services or getting in touch with the spa, everything is easy to find."
+          longDescription="A comprehensive website for a nail spa, designed to showcase its range of services, pricing details, and contact information. The website offers a user-friendly experience for visitors, with an intuitive layout and quick navigation. Whether it's browsing available services, exploring pricing options, or easily contacting the spa, the site ensures a smooth experience. Built with Next.js and Tailwind CSS, the project is responsive, ensuring accessibility across all devices. Additionally, email communication is powered by AWS for scalability and reliability. This project demonstrates the ability to create a functional, visually appealing, and easy-to-navigate web presence for a local business."
+          tags={["React", "Next.js", "Tailwind CSS", "AWS"]}
+          demoUrl="https://pinkynailspa.com"
+          codeUrl=""
         />
-        <ProjectCard
-          title="Microblog Website"
-          description="A dynamic blog platform that lets users create, edit, and bid on posts while supporting secure authentication."
-          longDescription="A dynamic blog platform that offers users the ability to create, edit, and delete posts complete with image uploads and an engaging like system. Uniquely, it incorporates a bidding feature that allows users to place bids on posts related to purchases. The backend is built with Express.js and SQLite, supporting secure authentication methods including traditional logins and Google OAuth. Users can sort posts by criteria such as likes and recency, providing an interactive and robust content experience."
-          tags={["HTML", "CSS", "Express.js", "SQLite", "Node.js"]}
-          demoUrl=""
-          codeUrl="https://github.com/nianguye/Microblog"
-        />
+
         <ProjectCard
           title="Refra"
           description="A POS app that manages transactions via QR codes, enabling customers to earn and redeem rewards across businesses."
@@ -57,13 +50,14 @@ export default function Project() {
           demoUrl=""
           codeUrl=""
         />
+
         <ProjectCard
-          title="Pinky Nail Spa website"
-          description="A simple website for a nail spa that showcases services, prices, and contact information."
-          longDescription="A simple website for a nail spa that showcases services, prices, and contact information. Built with Next.js and Tailwind CSS, it features a responsive design and smooth navigation. The site includes sections for services, pricing, and contact details, ensuring easy access to essential information. Overall, this project demonstrates the ability to create a clean and user-friendly web presence for a local business."
-          tags={["React", "Express.js", "Next.js", "Tailwind CSS"]}
-          demoUrl=""
-          codeUrl=""
+          title="Rice Classification"
+          description="A machine learning app that classifies two rice types using a neural network trained on key grain characteristics."
+          longDescription="A machine learning application that distinguishes between two rice types using a neural network built in PyTorch. The model is trained on key physical grain features—such as area, perimeter, major and minor axis lengths, eccentricity, convex area, extent, and compactness—to perform binary classification. It employs multiple hidden layers with sigmoid activations and is optimized using the Adam optimizer over 1000 epochs. Additionally, hyperparameter tuning is integrated via skorch and GridSearchCV to refine the network architecture and learning rate. This setup provides a scalable, accurate framework for rice quality assessment and agricultural analysis."
+          tags={["Python", "Pytorch", "Sklearn", "Streamlit"]}
+          demoUrl="https://rice-classification-machinelearning.streamlit.app"
+          codeUrl="https://github.com/nianguye/Rice-Classification"
         />
       </div>
     </section>
