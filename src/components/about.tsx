@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { FaReact } from "react-icons/fa";
 import { RiSvelteFill } from "react-icons/ri";
@@ -20,22 +20,22 @@ export default function About() {
   return (
     <section
       id="about"
-      className={`max-w-4xl mx-auto py-20 md:py-32 space-y-8 ${
+      className={`max-w-4xl mx-auto py-20 md:py-32 space-y-6 ${
         inView ? "fade-up" : ""
       }`}
       ref={ref}
     >
-      <div className="text-center space-y-4">
+      <div className="text-center space-y-6">
         <h2 className="text-3xl font-bold tracking-tight">About</h2>
       </div>
-      <div className="w-full mx-auto space-y-6 ">
+      <div className="w-full mx-auto space-y-6">
         <div className="text-xl text-center text-muted-foreground max-w-[700px] mx-auto space-y-6">
           <p className="text-muted-foreground">
-            I&apos;m a full stack engineer with a strong interest in back-end
-            development. Through personal projects, I&apos;ve had the opportunity to
-            collaborate with teammates, building scalable applications and
-            strengthening my skills across both front-end and back-end
-            technologies.
+            I&apos;m a software developer with a strong interest in back-end
+            development. Through personal projects, I&apos;ve had the
+            opportunity to collaborate with teammates, building scalable
+            applications and strengthening my skills across both front-end and
+            back-end technologies.
           </p>
           <p className="text-muted-foreground">
             My approach to web development focuses on creating responsive,
@@ -48,16 +48,13 @@ export default function About() {
           <p className="text-muted-foreground">
             In my free time, I enjoy hitting the gym for a good workout,
             embarking on spontaneous hiking trips to explore nature, and
-            collecting Pokémon cards. Im also passionate about continuously
+            collecting Pokémon cards. I&apos;m also passionate about continuously
             learning new technologies and expanding my skill set.
           </p>
         </div>
-        <div className="space-y-2 pt-2">
+        <div className="space-y-6">
           <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight">
-              Technologies
-            </h2>
-            
+            <h2 className="text-3xl font-bold tracking-tight">Technologies</h2>
           </div>
           <div className="flex flex-row flex-wrap justify-center gap-6 pt-2">
             <Card className="flex flex-col h-32 w-32 border">

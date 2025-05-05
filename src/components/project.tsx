@@ -14,7 +14,7 @@ export default function Project() {
       ref={ref}
       className={`py-24 md:py-32 space-y-6 w-full ${inView ? "fade-up" : ""}`}
     >
-      <div className="text-center space-y-4">
+      <div className="text-center space-y-6">
         <h2 className="text-3xl font-bold tracking-tight">My Projects</h2>
       </div>
       <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl">
@@ -53,7 +53,7 @@ export default function Project() {
 
         <ProjectCard
           title="Rice Classification"
-          description="A machine learning app that classifies two rice types using a neural network trained on key grain characteristics."
+          description="A machine learning app that classifies two rice types using a neural network trained on key grain characteristics using pytorch."
           longDescription="A machine learning application that distinguishes between two rice types using a neural network built in PyTorch. The model is trained on key physical grain features—such as area, perimeter, major and minor axis lengths, eccentricity, convex area, extent, and compactness—to perform binary classification. It employs multiple hidden layers with sigmoid activations and is optimized using the Adam optimizer over 1000 epochs. Additionally, hyperparameter tuning is integrated via skorch and GridSearchCV to refine the network architecture and learning rate. This setup provides a scalable, accurate framework for rice quality assessment and agricultural analysis."
           tags={["Python", "Pytorch", "Sklearn", "Streamlit"]}
           demoUrl="https://rice-classification-machinelearning.streamlit.app"

@@ -16,7 +16,6 @@ import { useState } from "react";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogClose,
@@ -85,12 +84,9 @@ export function ProjectCard({
               <DialogTitle className="text-2xl">{title}</DialogTitle>
               <DialogClose asChild></DialogClose>
             </div>
-            <DialogDescription className="text-left">
-              {description}
-            </DialogDescription>
           </DialogHeader>
 
-          <div className="space-y-6 py-4">
+          <div className="space-y-6">
             <div className="space-y-2">
               <h3 className="text-lg font-medium">Project Details</h3>
               <p className="text-muted-foreground">{longDescription}</p>
@@ -109,7 +105,7 @@ export function ProjectCard({
 
             {(demoUrl !== "" || codeUrl !== "") && (
               <div className="grid grid-cols-2 sm:flex-row gap-4 pt-4">
-                {demoUrl !== "" && (
+                {(
                   <Button asChild className="flex-1">
                     <Link
                       href={demoUrl}
@@ -121,7 +117,7 @@ export function ProjectCard({
                     </Link>
                   </Button>
                 )}
-                {codeUrl !== "" && (
+                { (
                   <Button variant="outline" asChild className="flex-1">
                     <Link
                       href={codeUrl}

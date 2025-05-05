@@ -17,7 +17,7 @@ export default function Home() {
               Hi, I&apos;m <span className="text-primary">Nilson</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-[700px]">
-              A Full Stack Developer passionate about building seamless digital
+              A Software Developer passionate about building seamless digital
               experiences—from concept through to deployment.
             </p>
           </div>

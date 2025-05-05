@@ -3,7 +3,7 @@ import { Sidebar } from "./sidebar";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-10 bg-[#90D5FF]/95 border border-transparent shadow-none ">
+    <header className="sticky top-0 z-10 bg-[#90D5FF]/95 border border-transparent shadow-none rounded-b-2xl">
       <div className="relative flex h-16 items-center justify-end mx-auto px-8">
         <nav className="flex gap-6">
           <Sidebar />
