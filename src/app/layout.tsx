@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,8 +13,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Portfolio of Nilson Nguyen",
+  metadataBase: new URL("https://www.nilsonnguyen.com"),
+  title: "Nilson Nguyen | Software Engineer",
+  description:
+    "Software Engineer at Visa building scalable full-stack applications, from the data model to the deployed product.",
+  openGraph: {
+    title: "Nilson Nguyen | Software Engineer",
+    description:
+      "Software Engineer at Visa building scalable full-stack applications, from the data model to the deployed product.",
+    url: "https://www.nilsonnguyen.com",
+    siteName: "Nilson Nguyen",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -25,18 +33,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth bg-white">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex min-h-screen flex-col bg-white">
-          <Header />
-          <main className="flex-1 pb-16">{children}</main>{" "}
-     
-        </div>
-        <footer>
-          <Footer />
-        </footer>
+        {children}
       </body>
     </html>
   );
