@@ -52,30 +52,30 @@ export default function About() {
             Software Engineer at Visa
           </span>{" "}
           on the VRM team, with a B.S. in Computer Science from{" "}
-          <span className="font-medium text-foreground">UC Davis</span>. Outside
-          of work I freelance, building{" "}
+          <span className="font-medium text-foreground">UC Davis</span>. I build
+          software across the stack, from{" "}
           <span className="font-medium text-foreground">
             scalable applications
           </span>{" "}
-          for real clients, from small-business websites to Roblox game
-          systems serving thousands of concurrent players.
+          to systems that support real-world users at scale.
         </p>
+
         <p>
           I care about the unglamorous parts of shipping software:{" "}
           <span className="font-medium text-foreground">
             responsive, accessible interfaces
           </span>{" "}
-          on the front, and{" "}
+          on the front end, and{" "}
           <span className="font-medium text-foreground">
             reliable, efficient systems
           </span>{" "}
-          behind them. I&apos;m constantly exploring new technologies to keep
-          both ends sharp.
+          behind them. I&apos;m constantly exploring new technologies to keep both
+          ends sharp.
         </p>
+
         <p>
-          In my free time, I enjoy hitting the gym for a good workout,
-          embarking on spontaneous hiking trips to explore nature, and
-          collecting{" "}
+          In my free time, I enjoy hitting the gym for a good workout, embarking on
+          spontaneous hiking trips to explore nature, and collecting{" "}
           <span className="font-medium text-foreground">Pokémon cards</span>.
         </p>
       </div>
