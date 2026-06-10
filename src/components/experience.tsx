@@ -11,7 +11,7 @@ const experiences = [
     tags: [],
   },
   {
-    period: "Apr 2025 - Present",
+    period: "Apr 2025 - Feb 2026",
     role: "Freelance Developer",
     company: "Self-employed",
     summary:
@@ -19,7 +19,7 @@ const experiences = [
     tags: ["Next.js", "Tailwind CSS", "AWS SES"],
   },
   {
-    period: "Feb 2025 - Present",
+    period: "Feb 2025 - Feb 2026",
     role: "Freelance Roblox Developer",
     company: "Self-employed",
     summary:
