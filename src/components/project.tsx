@@ -17,7 +17,6 @@ const projects = [
   },
   {
     title: "Pinky Nail Spa",
-    badge: "Client Work",
     description:
       "Production website built and shipped for a real local business: full service catalog, pricing, and an AWS SES contact flow that lifted customer inquiries by 20%. Live today at pinkynailspa.com.",
     longDescription:
@@ -28,7 +27,6 @@ const projects = [
   },
   {
     title: "Legal Document Risk Analyzer",
-    badge: "In Progress",
     description:
       "Web app that flags risky clauses in uploaded legal PDFs. A custom prompt pipeline returns structured results with severity levels and a risk score out of 100, displayed clause by clause in the UI.",
     longDescription:
