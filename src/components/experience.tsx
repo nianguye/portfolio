@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 
 const experiences = [
   {
-    period: "Feb 2025 - Present",
+    period: "Feb 2026 - Present",
     role: "Software Engineer",
     company: "Visa",
     summary: "Software Engineer on the VRM team.",
