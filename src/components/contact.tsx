@@ -67,7 +67,7 @@ export default function Contact() {
       </div>
 
       <p className="mt-20 text-xs text-muted-foreground/70">
-        © {new Date().getFullYear()} Nilson Nguyen. Designed and built with
+        © {new Date().getFullYear()}{" "}Nilson Nguyen. Designed and built with
         Next.js &amp; Tailwind CSS.
       </p>
     </section>
