@@ -114,7 +114,8 @@
 
 @keyframes fadeUp {
   0% {
-    opacity: 0;
+    /* not 0: Chrome/Lighthouse ignore fully transparent paints (NO_FCP) */
+    opacity: 0.01;
     transform: translateY(24px);
   }
   100% {
