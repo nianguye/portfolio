@@ -10,7 +10,6 @@ import { SiCplusplus, SiLua } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { SiExpress } from "react-icons/si";
 import { FaPython } from "react-icons/fa6";
-import { useInView } from "react-intersection-observer";
 
 const technologies = [
   { name: "TypeScript", icon: SiTypescript, color: "#3178c6" },
@@ -29,17 +28,10 @@ const technologies = [
 ];
 
 export default function About() {
-  const [ref, inView] = useInView({
-    threshold: 0.1,
-    triggerOnce: true,
-  });
   return (
     <section
       id="about"
-      ref={ref}
-      className={`scroll-mt-16 py-12 lg:py-0 lg:pb-24 ${
-        inView ? "fade-up" : "opacity-0"
-      }`}
+      className="fade-up scroll-mt-16 py-12 lg:py-0 lg:pb-24"
     >
       <h2 className="sticky top-0 z-20 -mx-6 mb-6 bg-background/80 px-6 py-4 text-xs font-semibold uppercase tracking-widest backdrop-blur md:-mx-12 md:px-12 lg:static lg:mx-0 lg:mb-8 lg:bg-transparent lg:px-0 lg:py-0 lg:backdrop-blur-none">
         About
